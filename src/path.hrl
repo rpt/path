@@ -1,0 +1,6 @@
+-type ast() :: [form()].
+-type form() :: tuple().
+-type form_name() :: atom(). %% call | clause | clauses | 'fun' | function | ...
+-type action() :: {continue, form()} | {stop, form()}.
+-type user_action() :: continue | stop | action().
+-type callback() :: fun((form()) -> user_action()).

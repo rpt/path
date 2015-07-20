@@ -1,0 +1,6 @@
+{application, path,
+ [{description, "PArse Transform Helper"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [kernel,
+                  stdlib]}]}.
